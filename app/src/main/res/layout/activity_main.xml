@@ -7,28 +7,108 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imgChangeView"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_marginTop="32dp"
+    <Button
+        android:id="@+id/btnDo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="163dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="29dp"
+        android:backgroundTint="#950404"
+        android:text="Do"
+        app:layout_constraintBottom_toTopOf="@+id/btnRe"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnChange"
+        android:id="@+id/btnRe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginBottom="31dp"
+        android:backgroundTint="#FFC107"
+        android:text="Re"
+        app:layout_constraintBottom_toTopOf="@+id/btnMi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDo" />
+
+    <Button
+        android:id="@+id/btnMi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="161dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="#3F51B5"
+        android:text="Mi"
+        app:layout_constraintBottom_toTopOf="@+id/btnFa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRe" />
+
+    <Button
+        android:id="@+id/btnFa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="164dp"
+        android:backgroundTint="#2196F3"
+        android:text="Fa"
+        app:layout_constraintBottom_toTopOf="@+id/btnSol"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMi" />
+
+    <Button
+        android:id="@+id/btnSol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="163dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#FF5722"
+        android:text="Sol"
+        app:layout_constraintBottom_toTopOf="@+id/btnLya"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFa" />
+
+    <Button
+        android:id="@+id/btnLya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="163dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#8BC34A"
+        android:text="Lya"
+        app:layout_constraintBottom_toTopOf="@+id/btnSi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSol" />
+
+    <Button
+        android:id="@+id/btnSi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="163dp"
         android:layout_marginTop="52dp"
-        android:layout_marginEnd="158dp"
-        android:backgroundTint="#780A0A"
-        android:text="Change Image"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="142dp"
+        android:backgroundTint="#10228A"
+        android:text="Si"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgChangeView" />
-
+        app:layout_constraintTop_toBottomOf="@+id/btnLya" />
 </androidx.constraintlayout.widget.ConstraintLayout>
